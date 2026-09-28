@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nocturne — a monochrome study in light, shape, and silence." />
+    <title>Nocturne — Selected Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nocturne home">
+        <span class="brand-mark"></span>
+        <span>NOCTURNE</span>
+      </a>
+      <p class="issue">VISUAL ARCHIVE&nbsp;&nbsp; / &nbsp;&nbsp;VOL. 01</p>
+      <button class="sound-toggle" type="button" aria-label="Toggle ambient sound" aria-pressed="false">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>SOUND OFF</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">CURATED STUDIES / 2023—2025</p>
+        <h1 id="page-title">Between light<br />&amp; <em>silence.</em></h1>
+        <div class="hero-foot">
+          <p>A collection of ten monochrome observations exploring structure, shadow, and the quiet spaces in between.</p>
+          <a href="#gallery">EXPLORE THE SERIES <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+        <div class="section-head">
+          <h2 id="gallery-heading">SELECTED WORKS</h2>
+          <span>10 FRAMES</span>
+        </div>
+        <div class="gallery" id="gallery-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>NOCTURNE © 2025</p>
+      <p>AN INDEPENDENT VISUAL STUDY</p>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+
+    <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+      <div class="viewer-shell">
+        <header class="viewer-header">
+          <div><span id="viewer-count">01 / 10</span><span class="viewer-category">STUDY</span></div>
+          <button class="viewer-close" type="button" aria-label="Close image viewer">CLOSE <span aria-hidden="true">×</span></button>
+        </header>
+        <div class="viewer-stage">
+          <button class="viewer-nav viewer-prev" type="button" aria-label="Previous image">←</button>
+          <img id="viewer-image" src="" alt="" />
+          <button class="viewer-nav viewer-next" type="button" aria-label="Next image">→</button>
+        </div>
+        <div class="viewer-caption">
+          <div><h2 id="viewer-title"></h2><p id="viewer-location"></p></div>
+          <p id="viewer-description"></p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
